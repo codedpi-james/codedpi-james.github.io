@@ -1,0 +1,387 @@
+@font-face {
+  font-family: "Patron";
+  src: url("./fonts/Patron-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Patron Bold";
+  src: url("./fonts/Patron-Bold.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Regular-slnt=0.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter Light";
+  src: url("./fonts/Inter-Light-slnt=0.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  letter-spacing: -0.05em;
+}
+
+h1 {
+  font-family: 'Patron Bold', Helvetica, sans-serif;
+  font-size: 4em;
+  margin: 75px 0 0 0;
+}
+
+h2 {
+  font-family: 'Patron', Helvetica, sans-serif;
+  font-size: 2em;
+  margin: 0px 0 20px 0;
+}
+
+p {
+  font-family: 'Inter Light', Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+/* Hero */
+
+#hero {
+  padding: 50px;
+  background-image: url("images/retina/hero-bg-with-gradient@2x.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1778px 550px;
+}
+
+#hero #wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#hero #intro {
+  float: left;
+  width: 300px;
+  margin: 0 75px 0 0;
+}
+
+#hero h1 {
+  color: #054D62;
+}
+
+#hero h2,
+#hero p {
+  color: #ffffff;
+}
+
+#hero h2 {
+  margin-bottom: 130px;
+}
+
+#hero p {
+  font-size: 0.5em;
+}
+
+#hero span {
+  display: block;
+  margin: 0 0 10px 0;
+  text-indent: -500px;
+  overflow: hidden;
+}
+
+#hero img {
+  width: 735px;
+  height: 435px;
+}
+
+.gate-group {
+  height: 22px;
+  width: 111px;
+  background-image: url("images/retina/GG-logo-header@2x.png");
+  background-size: 111px 22px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.bsd {
+  height: 13px;
+  width: 146px;
+  background-image: url("images/retina/BSD-logo-header@2x.png");
+  background-size: 146px 13px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* Main Content */
+
+#main-content {
+  max-width: 600px;
+  margin: auto;
+  padding: 50px 50px 30px 50px;
+}
+
+#main-content a {
+  font-family: 'Inter', Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+#main-content a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  clear: both;
+  border-top: 1px solid #000000;
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 0 40px 0;
+}
+
+footer p {
+  margin: 0 0 10px 0;
+}
+
+footer span {
+  float: left;
+  margin: 0 20px 10px 0;
+  overflow: hidden;
+  text-indent: -500px;
+}
+
+footer .gate-group {
+  height: 12px;
+  width: 61px;
+  background-image: url("images/retina/GG-logo-footer@2x.png");
+  background-size: 61px 12px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+footer .bsd {
+  height: 8px;
+  width: 87px;
+  background-image: url("images/retina/BSD-logo-footer@2x.png");
+  background-size: 87px 8px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+footer .copyright {
+  float: right;
+  font-size: 0.5em;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 1300px) {
+
+  #hero img {
+    width: 50%;
+    height: 50%;
+  }
+
+  #hero #intro {
+    margin: 0 50px 0 0;
+  }
+
+  #hero h1 {
+    margin: 20px 0 0 0;
+    padding: 0 0 0 0;
+  }
+
+  #hero h2 {
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  #hero {
+    padding: 0 0 0 0;
+    background-image: url("images/retina/hero-bg@2x.jpg");
+  }
+
+  #hero h1 {
+    color: #054D62;
+  }
+
+  #hero #intro {
+    float: none;
+    width: 100%;
+    background-color: #06C6B8;
+    margin: 0 0 0 0;
+  }
+
+  #hero .two-col {
+    max-width: 600px;
+    padding: 25px 50px 35px 50px;
+    margin: auto;
+  }
+
+  #hero img {
+    clear: both;
+    width: 70%;
+    height: 70%;
+    margin: 0 15% 40px 15%;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  #hero .two-col {
+    padding-bottom: 40px;
+  }
+
+  #hero h1 {
+    font-size: 3em;
+    margin-top: 0px;
+  }
+
+  #hero h2 {
+    width: 75%;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  #hero span {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .gate-group {
+    height: 15px;
+    width: 80px;
+    background-image: url("images/retina/GG-logo-header@2x.png");
+    background-size: 80px 15px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .bsd {
+    padding-top: 3px;
+    height: 9px;
+    width: 105px;
+    background-image: url("images/retina/BSD-logo-header@2x.png");
+    background-size: 105px 9px;
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+  }
+
+  #hero img {
+    margin-top: 40px;
+  }
+
+  footer {
+    padding-bottom: 30px;
+  }
+
+  footer .copyright {
+    clear: left;
+    float: none;
+    padding-top: 10px;
+    margin-bottom: 0px;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  #hero .two-col {
+    padding: 20px 20px 40px 20px;
+  }
+
+  #hero h1 {
+    font-size: 2.5em;
+    margin-top: 0px;
+  }
+
+  #hero h2 {
+    width: 75%;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+  }
+
+  #hero img {
+    clear: both;
+    width: 80%;
+    height: 80%;
+    margin: 30px 10% 30px 10%;
+  }
+
+  #main-content {
+    padding: 30px 20px 30px 20px;
+  }
+
+  #main-content h2 {
+    font-size: 1.5em;
+  }
+
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+@media (min-width: 381px) and (max-width: 700px) {
+
+  footer {
+    max-width: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+
+  #hero h1,
+  #hero h2 {
+    width: 50%;
+    margin: 0 0 0 0;
+  }
+
+  #hero h1 {
+    color: #054D62;
+    font-size: 3em;
+  }
+
+  #hero h2 {
+    font-size: 1.5em;
+  }
+
+  #hero .two-col div {
+    float: right;
+    position: relative;
+    top: -75px;
+  }
+
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+
+  #hero h1 {
+    font-size: 3.5em;
+    margin: 0 0 0 0;
+  }
+
+  #hero h2 {
+    font-size: 1.75em;
+    margin-bottom: 35px;
+  }
+
+}
